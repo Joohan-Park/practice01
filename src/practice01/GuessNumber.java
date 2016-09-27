@@ -8,7 +8,6 @@ public class GuessNumber {
 		Scanner scanner = new Scanner(System.in);
 		Random r = new Random();
 
-
 		int max = 100;
 		int min = 1;
 		int count = 1;
@@ -36,18 +35,17 @@ public class GuessNumber {
 					count++;
 				}
 			}
-			max=100;
-			min=1;
-			count=1;
+			max = 100;
+			min = 1;
+			count = 1;
 			System.out.print("다시하시겠습니까(y/n)>>");
 			String answer = scanner.next();
-			if(answer.equals("n")){
+			if (answer.equals("n")) {
 				break;
 			}
-			
 		}
 		System.out.println("게임이종료되었습니다.");
-	scanner.close();
-	scanner.close();	
+		scanner.close();
+		scanner.close();
 	}
 }
